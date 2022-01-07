@@ -1,0 +1,205 @@
+/*selector universal para eliminar los margenes que adopta el body y html por defecto y autoajuste del tamaño de cajas (border, padding, margin)*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*inicio de los estilos para el encabezado*/
+.container{
+    overflow:hidden;
+    background: #216288;
+    width: 100%;
+    margin: 0%;
+}
+
+.logo{
+    float:left;
+    padding-left: 20%;
+    margin-right: 0%;
+    box-sizing: border-box;
+    
+}
+.encabezado{
+    float: right;
+    padding-top: 0%;
+    padding-right: 20%;
+    margin-left: 0%;  
+}
+
+.encabezado>p{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo{
+    width: 230px;
+    height: 200px;
+    padding-top: 5%;
+}
+/*fin de los estilos para encabezado*/
+
+/*inicio estilos para el menu*/
+.menu{
+    background: #b8d414;
+    height: 80px;
+    
+}
+.menu>ul>li>a{
+    text-decoration: none;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.menu>ul{
+    padding: 30px;
+    text-align: center;
+}
+
+.menu>ul>li{
+    display: inline;
+    text-align: center;  
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background .5s;
+}
+.menu>ul>li:visited{
+    color: black;
+}
+
+.menu>ul>li:hover{
+    text-decoration: underline black;
+    background: rgba(173, 241, 62, 0.767);
+    border: inset rgb(131, 243, 121) 1px;
+}
+/*fin estilos para el menu*/
+
+/*inicio estilos h2 parrafo y video (index.html)*/
+h2{
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    clear: both;
+    text-justify: inter-word;
+}
+.vidpa{
+    float: right;
+    display: block;
+    height: 400px;
+    width: 960px;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-right: 24%;
+    clear: both;
+    padding-left: 3%;
+
+}
+.jornadas{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    clear: both;
+    padding-right: 2%;
+    width: 60%;
+    
+}
+.container2{
+    overflow: hidden;
+    clear: both;
+}
+/*fin estilos h2 parrafo y video*/
+
+/*Inicio estilos "donde y cuando" (index.html)*/
+h3{
+    text-decoration: underline dotted 6px #b8d414;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container3{
+    overflow: hidden;
+    background: #e5fed4;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    clear: both;
+}
+.donde{
+    display: block;
+    float: left;
+    margin-left: 28%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
+}
+.cuando{
+    display: block;
+    float: right;
+    margin-right: 28%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20px;
+}
+span{
+    font-weight: 900;
+    font-size: 20px;
+}
+.mail{
+    color: #7e8087;
+}
+.insc{
+    color: #7e8087;
+}
+.fav1{
+    color: black;
+}
+.fav2{
+    color: black;
+}
+/*fin estilos "donde y cuando*/
+
+/*inicio estilos "eventos" (index.html)*/
+h4{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5%;
+}
+.container4{
+    margin: 8%;
+
+}
+
+.img{
+    width: 490px;
+    height: 250px;
+}
+.table2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 25px;
+    text-justify: inter-word;
+}
+/*fin estilos "eventos"*/
+
+/*inicio estilos "footer"*/
+footer{
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(250, 248, 244);
+    text-align: left;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    font-size: 25px;
+}
+/*fin estilos "footer"*/
