@@ -3,7 +3,9 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    
 }
+
 
 /*inicio de los estilos para el encabezado*/
 .container{
@@ -16,15 +18,11 @@
 .logo{
     float:left;
     padding-left: 20%;
-    margin-right: 0%;
-    box-sizing: border-box;
-    
 }
 .encabezado{
     float: right;
-    padding-top: 0%;
     padding-right: 20%;
-    margin-left: 0%;  
+    
 }
 
 .encabezado>p{
@@ -66,8 +64,8 @@ h1{
 .menu>ul>li{
     display: inline;
     text-align: center;  
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 3%;
+    padding-right: 3%;
     transition: background .5s;
 }
 .menu>ul>li:visited{
@@ -88,33 +86,39 @@ h2{
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
-    clear: both;
     text-justify: inter-word;
+    
+    
 }
-.vidpa{
-    float: right;
-    display: block;
-    height: 400px;
-    width: 960px;
-    border-collapse: separate;
-    border-spacing: 10px;
-    margin-right: 24%;
-    clear: both;
-    padding-left: 3%;
 
-}
 .jornadas{
-    text-align: justify;
+    float: left;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
+    font-size: 25px;
+    display: inline;
+    padding-left: 20%;
+    padding-top: 5%;
+    width: 50%;
+    border: lightgreen;
     clear: both;
-    padding-right: 2%;
-    width: 60%;
+    text-align: justify;
+    text-justify: inter-word;
+
+   
+}
+.jornadas2{
+    margin-right: 5%;
+    width: 40%;
+    float: right;
+    
+    
+    
     
 }
 .container2{
     overflow: hidden;
-    clear: both;
+    
+    padding-bottom: 3%;
 }
 /*fin estilos h2 parrafo y video*/
 
@@ -131,24 +135,24 @@ h3{
     clear: both;
 }
 .donde{
-    display: block;
+    
     float: left;
-    margin-left: 28%;
+    margin-left: 24%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     text-justify: inter-word;
     font-size: 20px;
 }
 .cuando{
-    display: block;
+    
     float: right;
-    margin-right: 28%;
+    margin-right: 24%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     text-justify: inter-word;
     font-size: 20px;
 }
-span{
+.elibre{
     font-weight: 900;
     font-size: 20px;
 }
@@ -175,19 +179,26 @@ h4{
     margin-bottom: 5%;
 }
 .container4{
-    margin: 8%;
-
+    overflow: hidden;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    padding-right: 10%;
+    
 }
 
 .img{
-    width: 490px;
-    height: 250px;
+    width: 33em;
+    height: 14em;
 }
 .table2{
+    padding-left: 3%;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    font-size: 25px;
-    text-justify: inter-word;
+    font-size: 15px;
+    vertical-align: text-bottom;
+    
+  
+    
 }
 /*fin estilos "eventos"*/
 
@@ -203,3 +214,202 @@ footer{
     font-size: 25px;
 }
 /*fin estilos "footer"*/
+
+/* inicio estilos tabla programa.html */
+
+
+caption{
+    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background: black;
+    color: white;
+}
+.container6{
+    overflow: hidden;
+    padding-bottom: 2%;
+
+}
+
+.programario{
+    
+    float: left;
+    margin-left: 18%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    text-align: left;
+    
+}
+.programario th{
+    background: #b8d411;
+    
+}
+.programario>tbody>tr:nth-child(even){
+    background: #cae9ab;
+}
+
+.programario th:first-child{
+    width: 100px;
+}
+.programario th:nth-child(2){
+    width: 600px;
+}
+.programario th:nth-child(3){
+    width: 150px;
+}
+.programario th:nth-child(4){
+    width: 100px;
+}
+.programario th:last-child{
+    width: 100px;
+}
+
+.sep{
+    border-bottom: 2px solid #3e4637;
+}
+
+.entradaLibre{
+    text-align: center;
+    float: right;
+    margin-right: 41%;
+    font-weight: 400;
+}
+.insc2{
+    color: #7e8087;
+    border-bottom: 1px dotted #7e8087;
+    text-decoration: none;
+    /*Segun la imagen de la práctica, deberia tener doble subrayado, uno solid (el generico de los enlaces) y otro dotted por debajo. He decidido, por tema estético, quitar el subrayado (solid) del link para que solo quede el subrayado "dotted". Aunque si se desea mantener doble, solo habria que quitar el "text-decoration: none"*/
+}
+
+/* fin estilos tabla programa.html*/
+
+/*inicio estilos Programación*/
+.container7{
+    overflow: hidden;
+    background: #e5fed4;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+h5{
+    font-size: 30px;
+    text-align: left;
+    padding-left: 23%;
+}
+.prog{
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.abril3{
+    float: left;
+    padding-left: 30%;
+    clear: both;
+}
+.abril4{
+    float: right;
+    padding-right: 36%;
+}
+h6>span{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight:bolder;
+    background: #bdfc80;
+    margin-right: 0%;
+    letter-spacing: 0.1px; 
+}
+.footer2>p{
+    font-size: 18px;
+    padding-left: 18%;
+}
+/*fin estilos programa.html*/
+/*inicio estilos formulario.html*/
+.container9{
+    overflow: hidden;
+}
+
+label {
+    display: block;
+    margin: 1px;
+    padding: 1px;
+}
+
+input:invalid:hover, textarea:invalid:hover{
+    background-color: rgb(245, 207, 207);
+}
+input:valid:hover,select:valid:hover,textarea:valid:hover{
+    background-color: rgb(219, 248, 219);
+}
+input:required, select:required, textarea:required {
+    border-color: rgb(245, 162, 8);
+    border-width: 2px;
+    border-style: dotted;
+}
+.datospersonales{
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    display: inline;
+    padding-left: 20%;
+    width: 20%;
+    border: lightgreen;
+    text-align: justify;
+    clear: both;
+}
+
+.perfilusuario{
+    float: right;
+    margin-right: 20%;
+    width: 20%;   
+    
+}
+.button{
+    border: 2px solid black ;
+    border-radius: 15px;
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 30%;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: background .5s;
+    clear: both;
+}
+.terminos{
+    overflow: hidden;
+    border: 2px solid black ;
+    border-radius: 15px;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 40px;
+    margin-left: 30%;
+}
+.term{
+    display: inline;
+    float: left;
+    padding-right: 15px;
+}
+button:hover{
+    background: #cae9ab;
+}
+
+.talleres{
+    padding: 10px;
+}
+.asistencia{
+    padding: 10px;
+}
+.datos{
+    font-size: 30px;
+    font-weight: 900;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*fin estilos formulario.html*/
+
+

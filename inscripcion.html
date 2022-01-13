@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link de styles.css, hoja de estilos-->
+    <link rel="stylesheet" href="./estilosCSS/style.css" type="text/css">
+    <title>Inscripción</title>
+</head>
+
+    <body>
+        <!--inicio encabezado-->
+        <div class="container">
+            <div class="encabezado">
+                <h1>II Jornadas de Informática</h1><br>
+                <p>Valencia 3 y 4 de Abril de 2021</p>
+            </div>
+            <div class="logo">
+                <img id="logo" src="./img/logo.png" alt="imagen logo">
+            </div>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a> </li>
+                <li><a href="programacion.html">Programación</a></li>
+                <li><a href="inscripcion.html" target="_blank" rel="noreferrer noopener">Registro a las jornadas</a></li>
+            </ul>
+        </div>
+            <!--fin encabezado-->
+
+            <!--inicio formulario-->
+            <div class="container9">
+                <h4>Formulario de inscripción a las actividades</h4>
+                <form action="procesar.php" method="post">
+                    <div class="datospersonales">
+                        <p class="datos">Datos Personales</p><br>
+
+                        <div>
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" placeholder="Escribe tu nombre" id="nombre"
+                            pattern="[A-Za-z]{2,50}" required>
+                        </div>
+
+                        <div>
+                            <label for="apellidos1">Primer Apellido:</label>
+                            <input type="text" name="apellidos" placeholder="Escribe tus apellidos" id="apellidos1"
+                            pattern="[A-Za-z]{2,128}" required>
+                        </div>
+                        <div>
+                            <label for="apellidos2">Segundo Apellido:</label>
+                            <input type="text" name="apellidos" placeholder="Escribe tus apellidos" id="apellidos2"
+                            pattern="[A-Za-z]{2,128}" required>
+                        </div>
+
+                        <div>
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" placeholder="Escribe tu e-mail" id="email"
+                            pattern="[A-Za-z]{3,50}[@]{1}[A-Za-z]{2,30}[.]{1}[A-Za-z]{2,6}" required>
+                        </div>
+
+                        <div>
+                            <label for="tlf">Teléfono:</label>
+                            <input type="tel" name="tlf" placeholder="Escribe tu nº de teléfono" pattern="[0-9]{8,9}"
+                            id="tlf" required>
+                        </div>
+
+                        <div>
+                            <label for="file">foto:</label>
+                            <input type="file" name="foto" id="file">
+                        </div>
+                    </div>
+
+                    <div class="perfilusuario">
+                        <p class="datos">Perfil del Usuario</p><br>
+
+                        <div>
+                            <label>Motivos de interés en las Jornadas</label>
+                            <textarea name="comentarios" rows="10" cols="40"
+                            placeholder="Escribe aquí tu interes en las jornadas" required></textarea>
+                        </div>
+
+                    <div>
+                        <label for="profesion">Profesión</label>
+                        <select name="profesion" id="profesion" required>
+                            <option value="">Elige profesion...</option>
+                            <option value="estudiantebachilerato">Estudiante Bachillerato</option>
+                            <option value="estudianteuniversidad">Estudiante Universidad</option>
+                            <option value="doctorado">Doctorado</option>
+                            <option value="profesionalinformatico">Profesional Informático</option>
+                            <option value="profesor">Profesor</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+
+                    <div class="talleres">
+                        <p>Talleres a los que Asistiré: <br>
+                            <input type="checkbox" name="computacion" id="taller">Computación Cuántica <br>
+                            <input type="checkbox" name="ani3d" id="taller1">Animación 3D <br>
+                            <input type="checkbox" name="analisis" id="taller2">Análisis Dispositivos Móviles <br>
+                            <input type="checkbox" name="matd" id="taller3">Metodologias Ágiles y Transformación Digital
+                            <br>
+                            <input type="checkbox" name="rv" id="taller4">Realidad virtual y aumentada <br>
+                            <input type="checkbox" name="lego" id="taller5">First Lego League <br>
+                        </p>
+                    </div>
+                    <!--No se como hacer para que un grupo de checkbox pida al menos 1 validación. Si coloco un required a cada checkbox, todos seran de marcado obligatorio. Prefiero dejarlo sin required. Por lo que he estado leyendo es necesario usar js para este fin-->
+                    <div class="asistencia">
+                        <p>Día de asistencia: <br>
+                            <input type="radio" name="hm" value="3"> Asistiré el día 3 de abril <br>
+                            <input type="radio" name="hm" value="4"> Asistiré el día 4 de abril <br>
+                            <input type="radio" name="hm" value="3y4"> Asistiré ambos días <br>
+                        </p>
+                    </div>
+                </div>
+
+                <div>
+                    <input class="button" type="submit" value="Enviar">
+                </div>
+                <div class="terminos">
+                    <div class="term">
+                       <label for="terminos"><span class="span-terminos">Acepto los <a target="_blank" rel="noreferrer noopener" href="" class="enlace-terminos">terminos y condiciones</a></span></label>
+                    </div>
+                    <input  type="checkbox"  name="terminos" id="terminos" value="terminos" required>
+                </div>
+                
+            </form>
+        </div>
+        <!--fin formulario-->
+
+        <!--inicio pie de página-->
+        <div class="container5">
+            <footer class="footer2">
+                <p>Actividad realizada por Miguel Ángel Gutiérrez Gómez, para la asignatura de Lenguaje de marcas
+                    <br><br>
+                    Primer trimestre 2021/2022
+                </p>
+            </footer>
+        </div>
+        <!--fin pie de página-->
+    </body>
+
+</html>

@@ -27,66 +27,147 @@
             <li><a href="index.html">Inicio</a> </li>
             <li><a href="programacion.html">Programación</a></li>
             <li><a href="inscripcion.html" target="_blank" rel="noreferrer noopener">Registro a las jornadas</a></li>
+        <!--me gusta usar rel"noreferrer noopener" despues de un "target=_blank" porque segun tengo entendido ayudan a evitar el tabnabbing invertido (esta mala practica nos llevaria a una copia de nuestra pagina que podria utilizarse de forma maliciosa para adquirir datos confidenciales de usuarios o simplemente difundir malware mediante la reasignación de usuario "window.opener.location.assign ()"). Es un concepto algo avanzado para lo que hemos visto hasta ahora en clase, pero desde que lo aprendí cogí la costumbre de utilizarlo-->
         </ul>
     </div>
-    <div>
     <!--fin encabezado-->
 
     <!--inicio tabla programa-->
-    <h2>Programa de las II jornadas Informáticas</h2>
-    <div>
-        <table>
-            <tr>
-                <td>a</td>
-                <td>b</td>
-                <td>c</td>
-                <td>d</td>
-                <td>e</td>
-            </tr>
-            <tr>
-                <td>f</td>
-                <td>g</td>
-                <td>h</td>
-                <td>i</td>
-                <td>j</td>
-            </tr>
-            <tr>
-                <td>k</td>
-                <td>l</td>
-                <td>m</td>
-                <td>n</td>
-                <td>o</td>
-            </tr>
-            <tr>
-                <td>p</td>
-                <td>q</td>
-                <td>r</td>
-                <td>s</td>
-                <td>t</td>
-            </tr>
-            <tr>
-                <td>u</td>
-                <td>v</td>
-                <td>w</td>
-                <td>x</td>
-                <td>y</td>
-            </tr>
-            <tr>
-                <td>z</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-            </tr>
+    <div class="container6">
+        
+        <h2>Programa de las II jornadas Informáticas</h2>
+        
+        <table class="programario">
+            <caption>Todos los talleres de las jornadas</caption>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th  colspan="8">Taller</th>
+                    <th  colspan="3">Ponente</th>
+                    <th  colspan="2">Horario</th>
+                    <th>Ubicación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4">2 de abril</td>
+                    <td colspan="8">Computacion cuantica: la Proxima Revolucion de la Informática</td>
+                    <td colspan="3">Javier Garcia</td>
+                    <td colspan="2">
+                        <i class="fas fa-clock"></i>9 a 12 h</td>
+                    <td>
+                        <i class="fas fa-map-marker-alt"></i>Aulario I
+                    <td>
+                </tr>
+
+                <tr>
+                   
+                    <td colspan="8">Animación 3D en la industria del videojuego</td>
+                    <td colspan="3">Vanessa Pérez</td>
+                    <td colspan="2">
+                        <i class="fas fa-clock"></i>12 a 14 h
+                    </td>
+                    <td>
+                        <i class="fas fa-map-marker-alt"></i>Aulario I
+                    </td>
+                </tr>
+
+                <tr>
+                    
+                    <td colspan="8">Taller sobre análisis de dispositivos móviles</td>
+                    <td colspan="3">Dionisio Vidal</td>
+                    <td colspan="2">
+                        <i class="fas fa-clock"></i>16 a 18 h
+                    </td>
+                    <td>
+                        <i class="fas fa-map-marker-alt"></i>Aulario II
+                    </td>
+                </tr>
+
+                <tr>
+                    
+                    <td colspan="8" class="sep">Metodologias Ágiles y Transformación Digital</td>
+                    <td colspan="3" class="sep">Pablo Fernández</td>
+                    <td colspan="2" class="sep">
+                        <i class="fas fa-clock"></i>18 a 20 h
+                    </td>
+                    <td class="sep">
+                        <i class="fas fa-map-marker-alt"></i>Aulario II
+                    </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="3">4 de abril</td>
+                    <td colspan="8">Realidad Virtual y aumentada: experiencias asequibles y utiles en educación.</td>
+                    <td colspan="3">Óscar Sapena</td>
+                    <td colspan="2">
+                        <i class="fas fa-clock"></i>10 a 12 h
+                    </td>
+                    <td>
+                        <i class="fas fa-map-marker-alt"></i>Aulario I
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="8">La predicción del tiempo</td>
+                    <td colspan="3">Nuria Medina</td>
+                    <td colspan="2">
+                        <i class="fas fa-clock"></i>12 a 14 h
+                    </td>
+                    <td>
+                        <i class="fas fa-map-marker-alt"></i>Aulario I
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="8">First Lego League</td>
+                    <td colspan="3">Pedro Sosa</td>
+                    <td colspan="2">
+                        <i class="fas fa-clock"></i>16 a 18 h
+                    </td>
+                    <td>
+                        <i class="fas fa-map-marker-alt"></i>Aulario II
+                    </td>
+                </tr>
+                
+            </tbody>
+
         </table>
+            <div class="entradaLibre">
+            <P>La entrada a las actividades es libre con <a class="insc2" href="./inscripcion.html" target="_blank" rel="noreferrer noopener">inscripción</a> previa</P>
+            </div>
     </div>
     <!--fin tabla programa-->
+    <!--inicio programación-->
+
+    <div class="container7">
+        <h5>Programación</h5><br>
+        <div class="abril3">
+            <h6><span> 3 de abril de 2021</span></h6><br>
+            <p><span class="prog">9 h</span>, recepción de los participantes</p><br>
+            <p><span class="prog">10 a 14 h</span>, talleres</p><br>
+            <p><span class="prog">14 a 16 h</span>, pausa comida</p><br>
+            <p><span class="prog">16 a 20 h</span>, talleres</p>
+        </div>
+        <div class="abril4">
+            <h6><span>4 de abril de 2021</span></h6><br>
+            <p><span class="prog">9 a 14 h</span>, talleres</p><br>
+            <p><span class="prog">14 a 16 h</span>, pausa comida</p><br>
+            <p><span class="prog">16 a 18 h</span>, talleres</p><br>
+            <p><span class="prog">18 a 18:30 h</span>, clausura</p>
+        </div>
+
+    </div>
+    <!--fin programación-->
+
+    <!--inicio pie de página-->
+    <div class="container5">
+        <footer class="footer2">
+            <p>Actividad realizada por Miguel Ángel Gutiérrez Gómez, para la asignatura de Lenguaje de marcas <br><br>
+            Primer trimestre 2021/2022</p>
+        </footer>
+    </div>
+    <!--fin pie de página-->
 </body>
+
 </html>
